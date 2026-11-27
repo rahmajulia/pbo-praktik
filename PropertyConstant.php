@@ -2,7 +2,7 @@
 
 namespace pbo\Marketplace;
 
-class Produk{
+trait Produk{
 
     //property
     private string $kode;
@@ -38,7 +38,7 @@ class Produk{
         return $this;
     }
 
-     public function setStok($sgittok){
+     public function setStok($stok){
         if($stok <= 0){
             echo "stok tidak boleh 0";
             exit();
